@@ -1,0 +1,221 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0; 
+  font-family: Arial, sans-serif; 
+}
+
+.labyrinth-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.labyrinth-creator h1 {
+  margin-bottom: 10px;
+}
+.labyrinth-creator h2 {
+  font-size: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-container button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-left: 10px;
+  
+}
+
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.labyrinth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.player-direction{
+  position: fixed;
+  bottom: 130px; 
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex; 
+  flex-direction: column;
+  gap: 5px; 
+  margin-bottom: 20px;
+  width: 210px;
+}
+
+.arrow-container {
+  position: fixed;
+  bottom: 80px; 
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px; 
+  margin-bottom: 7px;
+}
+
+.back-to-creator-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.back-to-creator-button:hover {
+  background-color: #45a049;
+}
+
+.back-to-welcome-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 14px; 
+  cursor: pointer; 
+}
+
+.back-to-welcome-button:hover {
+  background-color: #45a049; 
+}
+
+.placement-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.placement-emoji {
+  font-size: 24px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.placement-emoji:hover {
+  transform: scale(1.2);
+}
+
+.placement-emoji.selected {
+  border-color: #4caf50;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.save-load-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.save-load-container button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.save-load-container button:hover {
+  background-color: #45a049;
+}
+
+.saved-labyrinths {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  max-width: 200px;
+  z-index: 1000;
+}
+
+.saved-labyrinths h3 {
+  margin-top: 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.saved-labyrinths ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saved-labyrinths li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.saved-labyrinths li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,61 @@
+.labyrinth-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.emoji-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treasure .emoji-cell,
+.wumpus .emoji-cell,
+.pit .emoji-cell {
+  font-size: 1em;
+}
+
+.start-label {
+font-weight: bold;
+color: #00796b;
+text-align: center;
+display: inline-block;
+width: 100%;
+height: 100%;
+line-height: 1.5;
+}
+
+
+.path {
+  background-color: #fff;
+}
+
+.wall {
+  background-color: #4d4b4b;
+}
+
+.pit {
+  background-color: #000;
+}
+
+.treasure {
+  background-color: #ffcc00; 
+}
+
+.wumpus {
+  background-color: #ff0000;
+}
